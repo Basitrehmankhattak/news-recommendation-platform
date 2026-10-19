@@ -55,15 +55,14 @@ System Infrastructure
 
 ```text
 news-recommendation-platform/
-├── app/
-│   ├── api/                  # FastAPI endpoint routes
-│   ├── models/               # Pydantic schemas & SQLAlchemy DB models
-│   └── services/             # Retrieval (FAISS), Ranking (LightGBM), & MMR logic
-├── data/                     # Embeddings, FAISS indices, & Parquet datasets
-├── dashboard/                # Streamlit analytics & demonstration interface
-├── docker-compose.yml        # Orchestration for FastAPI, PostgreSQL, & Streamlit
-├── Dockerfile
-├── requirements.txt
+├── backend/                  # FastAPI backend server
+├── recsys_ui/                # Next.js / Streamlit web interface (NewsFlix UI)
+├── src/                      # FAISS candidate retrieval & recommendation pipeline
+├── migrations/               # Database schemas & SQL migrations
+├── sql_tests/                # Database query validation scripts
+├── docker-compose.yml        # Multi-container orchestration
+├── auto_generate_clicks.py   # Impression & user interaction simulation
+├── ranking_dataset_v1..v4.csv # Training & evaluation datasets
 └── README.md
 ```
 ##  Getting Started
