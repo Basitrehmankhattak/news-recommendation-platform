@@ -74,4 +74,4 @@ docker-compose up -d --build
 3 - Access Endpoints:
 - FastAPI Docs: http://localhost:8000/docs
 - Streamlit Dashboard: http://localhost:8501
-- PostgreSQL Server: localhost:5432
+- PostgreSQL Server: localhost:5432 
